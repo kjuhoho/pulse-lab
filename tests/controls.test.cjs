@@ -1,0 +1,4 @@
+const {test}=require('node:test'),assert=require('node:assert/strict'),{laneForKey,schemes,directions}=require('../dist/controls.js');
+test('arrow keys follow left up down right lane order',()=>{['ArrowLeft','ArrowUp','ArrowDown','ArrowRight'].forEach((code,lane)=>assert.equal(laneForKey(code,'arrows'),lane));assert.deepEqual(directions,['←','↑','↓','→']);});
+test('WASD follows spatial order A W S D, with D on the right',()=>{['KeyA','KeyW','KeyS','KeyD'].forEach((code,lane)=>assert.equal(laneForKey(code,'wasd'),lane));assert.equal(laneForKey('KeyD','wasd'),3);assert.deepEqual(schemes.wasd.labels,['A','W','S','D']);});
+test('inactive and former DFJK keys cannot trigger unintended lanes',()=>{for(const code of ['KeyD','KeyF','KeyJ','KeyK','KeyA','KeyW','KeyS'])assert.equal(laneForKey(code,'arrows'),-1);for(const code of ['ArrowLeft','ArrowUp','ArrowDown','ArrowRight','KeyF','KeyJ','KeyK'])assert.equal(laneForKey(code,'wasd'),-1);});
