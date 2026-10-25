@@ -138,6 +138,7 @@ kbd{display:block;font:600 24px 'Space Grotesk',sans-serif}
 .record-label span{font:7px 'JetBrains Mono',monospace;letter-spacing:1px}
 .record-label b{font:800 30px 'Space Grotesk',sans-serif}
 .record-label small{font:5px 'JetBrains Mono',monospace}
+.record-cover{width:72px;height:72px;border-radius:50%;object-fit:cover;z-index:1;box-shadow:0 0 0 3px #00000066,0 0 20px #ff2f8f33}
 .record-caption{font:7px 'JetBrains Mono',monospace;letter-spacing:1px;text-align:center;color:var(--muted);margin-top:19px}
 .track-type{font:8px 'JetBrains Mono',monospace;letter-spacing:1px;color:var(--signal)}
 h3#trackName{font-size:15px;margin:10px 0 5px;overflow-wrap:anywhere}
