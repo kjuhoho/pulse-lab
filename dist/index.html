@@ -2,7 +2,7 @@
 <html lang="ko">
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#07080b"><meta name="description" content="내 음악을 불러오면 리듬이 게임이 됩니다. 브라우저에서 즐기는 자동 채보 4키 리듬게임."><title>PULSE LAB — 내 음악으로 플레이</title><link rel="stylesheet" href="style.css"><script src="engine.js" defer></script><script src="controls.js" defer></script><script src="app.js" defer></script></head>
 <body>
-<header><a class="brand" href="./" aria-label="Pulse Lab 홈"><span class="brand-icon"><svg viewBox="0 0 48 32" aria-hidden="true"><path d="M0 16 H12 L17 4 L23 28 L28 16 L32 22 L36 10 L40 16 H48"/></svg></span>PULSE<span>LAB</span><small>YOUR MUSIC. YOUR GAME.</small></a><nav><button id="guideButton">플레이 가이드</button><button id="ideasButton">레퍼런스 ↗</button><span class="version">PROTOTYPE / 01</span></nav></header>
+<header><a class="brand" href="./" aria-label="Pulse Lab 홈"><span class="brand-icon"><svg viewBox="0 0 48 32" aria-hidden="true"><path d="M0 16 H12 L17 4 L23 28 L28 16 L32 22 L36 10 L40 16 H48"/></svg></span>PULSE<span>LAB</span><small>YOUR MUSIC. YOUR GAME.</small></a><nav><a id="backLink" href="#" hidden>← DROPZONE</a><button id="guideButton">플레이 가이드</button><button id="ideasButton">레퍼런스 ↗</button><span class="version">PROTOTYPE / 01</span></nav></header>
 <main>
 <div class="hero"><canvas id="heroScope" class="hero-scope" aria-hidden="true"></canvas><span class="hero-live"><i></i>LIVE SIGNAL</span>
 <div class="intro"><div><p class="eyebrow"><span class="dot"></span> SIGNAL → RHYTHM</p><h1>좋아하는 음악을,<br class="mobile"> <em>플레이하다.</em></h1><p>음원을 넣고, 나만의 리듬을 시작하세요.</p></div><div class="local-tag"><span>◎</span><div>음원은 내 기기 안에서만<small>서버 전송 없이 브라우저에서 분석해요</small></div></div></div>

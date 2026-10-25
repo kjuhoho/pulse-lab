@@ -39,6 +39,8 @@ header{height:88px;border-bottom:1px solid var(--line);display:flex;align-items:
 nav{display:flex;align-items:center;gap:23px}
 nav button{font-size:12px;color:#c3cbd4}
 nav button:hover{color:var(--cyan)}
+#backLink{font:600 11px 'JetBrains Mono',monospace;letter-spacing:.5px;color:var(--cyan);border:1px solid var(--line);padding:7px 11px;border-radius:5px}
+#backLink:hover{border-color:var(--cyan)}
 .version{color:var(--muted);font-size:10px;border:1px solid var(--line);padding:8px 11px;border-radius:5px;letter-spacing:1px}
 
 main{max-width:1550px;margin:auto;padding:36px 4.2% 0}
